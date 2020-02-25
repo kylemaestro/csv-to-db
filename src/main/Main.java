@@ -6,6 +6,8 @@ public class Main {
 		Reader.init("data.csv");
 		
 		DatabaseParser parser = new DatabaseParser();
-		parser.createNewDatabase("records");
+		parser.setURL("records");
+		parser.createNewDatabaseWithTable();
+		parser.insertAll();
 	}
 }
