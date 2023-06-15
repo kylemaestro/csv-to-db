@@ -49,4 +49,4 @@ A few assumptions were made in development of this project. Chiefly, there is an
 'records.csv' file. This was decided to be erroneous, as the project specification made clear that only one table was expected.
 The second largest assumption was that the data types for each column of the table would remain static. While this is generally
 a wholly incorrect assumption for real-world databases, in the limited scope of this project it made sense to restrict the
-data types to the given input. 
+data types to the given input. (Note from The Future [2023]: I'm not sure why I thought this assumption was incorrect for the real world. Having worked with enterprise databases for nearly 3+ years now, the data in each column _should_ be the same for all records sharing that column. We would not expect some Customer records in an e-commerce database to have a CustomerName field that sometimes is a number, and sometimes a string. Leaving this here for posterity. I never heard back from this company :)
